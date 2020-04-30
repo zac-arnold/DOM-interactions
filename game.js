@@ -15,6 +15,7 @@ function bindEventListeners (dots) {
   }
 }
 
+
 function makeGreen (evt) {
   evt.preventDefault()
   evt.target.classList.toggle('green')
