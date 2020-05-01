@@ -12,6 +12,8 @@ function bindEventListeners (dots) {
     // BIND YOUR EVENT LISTENERS HERE
     // The first one is provided for you
     dots[i].addEventListener('contextmenu', makeGreen)
+    click(dots[i]).addEventListener('contextmenu', makeBlue)
+    
   }
 }
 
@@ -23,11 +25,11 @@ function makeGreen (evt) {
 }
 
 // CREATE FUNCTION makeBlue HERE
-function makeBlue (evt){
+function makeBlue (evt) {
   evt.target.classList.toggle('blue')
   updateCounts()
-  )
 }
+
 // CREATE FUNCTION hide HERE
 
 function updateCounts () {
